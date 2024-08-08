@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce 2.</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="css/allSection.css">
+        <!-- Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header-wrapper">
+                <div class="header-area">
+                    <div class="header-top">
+                        <div class="header-top-area container">
+                            <!-- ________  Header Social  _______ -->
+                            <ul class="header-top-social d-none ">
+                                <li>
+                                    <a href="#" class="social-link"><i class='bx bxl-facebook-circle'></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                                </li>
+                            </ul>
+
+                            <!-- ________  Header Top Offer  ________ -->
+                            <div class="header-top-offer d-none">
+                                <p><strong>Free Shipping </strong>This Week Order Over - $24</p>
+                            </div>
+
+                            <!-- ________  Header Top Dropdown  ________ -->
+                            <div class="header-top-dropdown d-none">
+                                <!--  Currency  -->
+                                <select name="currency" id="">
+                                    <option value="usd">USD &dollar;</option>
+                                    <option value="eruo">Eruo &euro;</option>
+                                </select>
+
+                                <!--  Language  -->
+                                <select name="language" id="">
+                                    <option value="en-us">English</option>
+                                    <option value="es-ES">Espa&ntilde;ol</option>
+                                    <option value="fr">Fran&ccedil;ais</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ________  Header Top End  ________-->
+
+
+                    <!-- ________  Header Main  ________  -->
+                    <div class="header-main ">
+                        <div class="header-main-wrapp flex-column container">
+                            <!--  Logo  -->
+                            <a class="logo" href="index.html">
+                                <img src="images/logo/logo.svg" alt="">
+                            </a>
+
+                            <!--  Search  -->
+                            <div class="search my-4">
+                                <input type="search" name="search" class="input-controls"
+                                    placeholder="Enter your product name...">
+                                <button class="search-btn">
+                                    <i class='bx bx-search-alt-2'></i>
+                                </button>
+                            </div>
+
+                            <!--  Header Main Right  -->
+                            <div class="header-main-right d-none">
+
+                                <div class="header-main-actions">
+                                    <button class="action-btn">
+                                        <i class='bx bx-user'></i>
+                                    </button>
+
+                                    <button class="action-btn">
+                                        <i class='bx bx-heart'></i>
+                                        <span class="count">0</span>
+                                    </button>
+
+                                    <button class="action-btn">
+                                        <i class='bx bx-cart-alt'></i>
+                                        <span class="count">0</span>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- _________  Mobile Bottom Fixed Header _________ -->
+                            <div class="mobile-bottom-header flex-between">
+                                <button class="action-btn" id="mobile-menu-open-btn">
+                                    <i class='bx bx-menu'></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class='bx bx-cart'></i><span>0</span>
+                                </button>
+                                <button class="action-btn">
+                                    <i class='bx bx-home'></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class='bx bx-heart'></i> <span>0</span>
+                                </button>
+                                <button class="action-btn" id="mobile-catagoris-open-btn">
+                                    <i class='bx bx-grid-alt'></i>
+                                </button>
+                            </div>
+
+
+                            <!-- ___________||  Mobile Navigation  ||___________ -->
+                            <div class="mobile-navigation  has-scrollbar" id="mobile-navigation">
+                                <!-- Header -->
+                                <div class="mobile-navigation-head flex-between">
+                                    <div class="menu-text">Menu</div>
+                                    <button class="menu-close-btn" id="mobile-menu-close-btn">
+                                        <i class='bx bx-x'></i>
+                                    </button>
+                                </div>
+
+                                <!-- Body -->
+                                <div class="mobile-navigation-body ">
+                                    <ul class="flex-column gap-5">
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item"><a class="w-100" href="index.html">Home</a></li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <!-- Button -->
+                                            <button class="nav-item-btn flex-between w-100">Men's
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="nav-item-content d-none">
+                                                <ul>
+                                                    <li><a href="#">Shirt</a></li>
+                                                    <li><a href="#">Shorts & Jeans</a></li>
+                                                    <li><a href="#">Safety Shoe</a></li>
+                                                    <li><a href="#">Wallet</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <!-- Button -->
+                                            <button class="nav-item-btn flex-between w-100">Women's
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="nav-item-content d-none">
+                                                <ul>
+                                                    <li><a href="#">Dress</a></li>
+                                                    <li><a href="#">Earrings</a></li>
+                                                    <li><a href="#">Makeup Kit</a></li>
+                                                    <li><a href="#">Chain</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <!-- Button -->
+                                            <button class="nav-item-btn flex-between w-100">Jewelry
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="nav-item-content d-none">
+                                                <ul>
+                                                    <li><a href="#">Ring</a></li>
+                                                    <li><a href="#">Earrings</a></li>
+                                                    <li><a href="#">Couple Ring</a></li>
+                                                    <li><a href="#">Chain</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <!-- Button -->
+                                            <button class="nav-item-btn flex-between w-100">Perfume
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="nav-item-content d-none">
+                                                <ul>
+                                                    <li><a href="#">Clothes Perfume</a></li>
+                                                    <li><a href="#">Deodorant</a></li>
+                                                    <li><a href="#">Exe</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <!-- Button -->
+                                            <button class="nav-item-btn flex-between w-100">Baby
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="nav-item-content d-none">
+                                                <ul>
+                                                    <li><a href="#">Dress</a></li>
+                                                    <li><a href="#">Earrings</a></li>
+                                                    <li><a href="#">Makeup Kit</a></li>
+                                                    <li><a href="#">Chain</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <a class="w-100" href="#">Blogs</a>
+                                        </li>
+                                        <!-- ________  Single Nav Item  ________ -->
+                                        <li class="nav-item  w-100">
+                                            <a class="w-100" href="#">Hot Offers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- Mobile Navigation Footer -->
+                                <div class="mobile-navigation-footer mt-4 ">
+                                    <!-- Dropdowns -->
+                                    <div class="dropdowns flex-column gap-15">
+
+                                        <!-- Language Dropdown -->
+                                        <div class="dropdown-item">
+                                            <button class="dropdown-button flex-between w-100">
+                                                Language <span><i class='bx bx-caret-left'></i></span>
+                                            </button>
+
+                                            <!-- Dropdown Content -->
+                                            <ul class="flex-column dropdown-content d-none mt-2 gap-5">
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">Bangla</a></li>
+                                                <li><a href="#">Hindi</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Currency Dropdown -->
+                                        <div class="dropdown-item">
+                                            <button class="dropdown-button flex-between w-100">
+                                                Currency <span><i class='bx bx-caret-left'></i></span>
+                                            </button>
+
+                                            <!-- Dropdown Content -->
+                                            <ul class="flex-column dropdown-content d-none mt-2 gap-5">
+                                                <li><a href="#">USD $</a></li>
+                                                <li><a href="#">EUR E</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Social Links -->
+                                    <div class="socials mt-4">
+                                        <ul class="flex-center  gap-15">
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <i class='bx bxl-facebook-circle'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <i class='bx bxl-twitter'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <i class='bx bxl-instagram'></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <i class='bx bxl-linkedin'></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ___________||  Mobile Catagories  ||___________ -->
+                            <div class="mobile-catagoris has-scrollbar" id="mobile-catagoris">
+                                <!-- Header -->
+                                <div class="mobile-catagoris-head flex-between my-2">
+                                    <div class="catagoris-text uppercase">Category</div>
+                                    <button class="catagoris-close-btn" id="close-mobile-catagoris">
+                                        <i class='bx bx-x'></i>
+                                    </button>
+                                </div>
+
+                                <!-- Catagoris Items -->
+                                <div class="mt-4">
+                                    <ul class="my-4 flex-column gap-15">
+                                        <!-- ________  Single Catagoris Item  ________ -->
+                                        <li class="catagoris-item  w-100">
+                                            <!-- Button -->
+                                            <button class="catagoris-item-btn flex-between w-100">
+                                                <div class="d-flex gap-15">
+                                                    <img src="images/icons/bag.svg" width="20px" alt="">
+                                                    <span>Bags</span>
+                                                </div>
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="catagoris-item-content d-none border-top mt-3">
+                                                <ul class="mt-2 flex-column gap-5">
+                                                    <li class="flex-between">
+                                                        <span>Shopping Bag</span>
+                                                        <span>61</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Wallet</span>
+                                                        <span>21</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Purse Bag</span>
+                                                        <span>24</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- ________  Single Catagoris Item  ________ -->
+                                        <li class="catagoris-item  w-100">
+                                            <!-- Button -->
+                                            <button class="catagoris-item-btn flex-between w-100">
+                                                <div class="d-flex gap-15">
+                                                    <img src="images/icons/cosmetics.svg" width="20px" alt="">
+                                                    <span>Cosmetics</span>
+                                                </div>
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="catagoris-item-content d-none border-top mt-3">
+                                                <ul class="mt-2 flex-column gap-5">
+                                                    <li class="flex-between">
+                                                        <span>Shampoo</span>
+                                                        <span>61</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Body Wash</span>
+                                                        <span>21</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Makeup</span>
+                                                        <span>24</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- ________  Single Catagoris Item  ________ -->
+                                        <li class="catagoris-item  w-100">
+                                            <!-- Button -->
+                                            <button class="catagoris-item-btn flex-between w-100">
+                                                <div class="d-flex gap-15">
+                                                    <img src="images/icons/perfume.svg" width="20px" alt="">
+                                                    <span>Perfume</span>
+                                                </div>
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="catagoris-item-content d-none border-top mt-3">
+                                                <ul class="mt-2 flex-column gap-5">
+                                                    <li class="flex-between">
+                                                        <span>Clothes Perfuem</span>
+                                                        <span>12 pcs</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Room Perfuem</span>
+                                                        <span>21 Pcs</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Jacket Dress</span>
+                                                        <span>24 Pcs</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <!-- ________  Single Catagoris Item  ________ -->
+                                        <li class="catagoris-item  w-100">
+
+                                            <!-- Button -->
+                                            <button class="catagoris-item-btn flex-between w-100">
+                                                <div class="d-flex gap-15">
+                                                    <img src="images/icons/jewelry.svg" width="20px" alt="">
+                                                    <span>Jewelry</span>
+                                                </div>
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="catagoris-item-content d-none border-top mt-3">
+                                                <ul class="mt-2 flex-column gap-5">
+                                                    <li class="flex-between">
+                                                        <span>Couple Rings</span>
+                                                        <span>21</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Necklace</span>
+                                                        <span>12</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Purse Bag</span>
+                                                        <span>24</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- ________  Single Catagoris Item  ________ -->
+                                        <li class="catagoris-item  w-100">
+
+                                            <!-- Button -->
+                                            <button class="catagoris-item-btn flex-between w-100">
+                                                <div class="d-flex gap-15">
+                                                    <img src="images/icons/glasses.svg" width="20px" alt="">
+                                                    <span>Glasses</span>
+                                                </div>
+                                                <div>
+                                                    <i class='bx bx-plus'></i>
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                            </button>
+
+                                            <!-- Content -->
+                                            <div class="catagoris-item-content d-none border-top mt-3">
+                                                <ul class="mt-2 flex-column gap-5">
+                                                    <li class="flex-between">
+                                                        <span>Sunglasses</span>
+                                                        <span>20</span>
+                                                    </li>
+                                                    <li class="flex-between">
+                                                        <span>Lenses Bag</span>
+                                                        <span>14</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- Best seller -->
+                                <div class="best-seller mt-4 border-top">
+
+                                    <div class="best-seller-title uppercase">
+                                        best seller
+                                    </div>
+
+                                    <ul class="mt-3 flex-column gap-15">
+
+                                        <!-- Single Catagory item -->
+                                        <li class="best-seller-item flex-between gap-20">
+                                            <a href=" #"><img width="89px" src="images/products/1.jpg" alt=""></a>
+                                            <div class="content flex-column gap-5">
+                                                <p class="name">Baby Farbic Shoes</p>
+                                                <div class="rating flex-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="prices flex-center gap-20">
+                                                    <del class=" old-price">$14.00</del>
+                                                    <strong class="new-price">$12.00</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Single Catagory item -->
+                                        <li class="best-seller-item flex-between gap-20">
+                                            <a href=" #"><img width="89px" src="images/products/2.jpg" alt=""></a>
+                                            <div class="content flex-column gap-5">
+                                                <p class="name">Men's Hoodies </p>
+                                                <div class="rating flex-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+                                                <div class="prices flex-center gap-20">
+                                                    <del class=" old-price">$14.00</del>
+                                                    <strong class="new-price">$12.00</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Single Catagory item -->
+                                        <li class="best-seller-item flex-between gap-20">
+                                            <a href=" #"><img width="89px" src="images/products/3.jpg" alt=""></a>
+                                            <div class="content flex-column gap-5">
+                                                <p class="name">Mens' Farbic Shoes</p>
+                                                <div class="rating flex-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+                                                <div class="prices flex-center gap-20">
+                                                    <del class=" old-price">$25.00</del>
+                                                    <strong class="new-price">$19.00</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Single Catagory item -->
+                                        <li class="best-seller-item flex-between gap-20">
+                                            <a href=" #"><img width="90px" src="images/products/4.jpg" alt=""></a>
+                                            <div class="content flex-column gap-5">
+                                                <p class="name">Women Hat For </p>
+                                                <div class="rating flex-center">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                </div>
+                                                <div class="prices flex-center gap-20">
+                                                    <del class=" old-price">$22.00</del>
+                                                    <strong class="new-price">$18.00</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--______________  Nav  _____________-->
+                <nav class="container">
+                    <ul class="c-navs d-none">
+                        <li class="c-menu"><a class="c-nav" href="#">Home</a></li>
+                        <li class="c-menu">
+                            <!-- Title -->
+                            <a href="#" class="c-nav">Categories</a>
+
+                            <div class="categories-drop grid border">
+                                <!-- Single Catagories Item -->
+                                <div class="categories-item ">
+                                    <div class="categories-title">Electronic</div>
+                                    <ul>
+                                        <li><a href="#">Desktop</a></li>
+                                        <li><a href="#">Laptop</a></li>
+                                        <li><a href="#">Camera</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Headphone</a></li>
+                                    </ul>
+                                    <a href="#" class="categories-banner">
+                                        <img src="images/electronics-banner-1.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Single Catagories Item -->
+                                <div class="categories-item">
+                                    <div class="categories-title">Electronic</div>
+                                    <ul>
+                                        <li><a href="#">Desktop</a></li>
+                                        <li><a href="#">Laptop</a></li>
+                                        <li><a href="#">Camera</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Headphone</a></li>
+                                    </ul>
+                                    <a href="#" class="categories-banner">
+                                        <img src="images/electronics-banner-2.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- Single Catagories Item -->
+                                <div class="categories-item ">
+                                    <div class="categories-title">Men's</div>
+                                    <ul>
+                                        <li><a href="#">Formal</a></li>
+                                        <li><a href="#">Shirt</a></li>
+                                        <li><a href="#">Glass</a></li>
+                                        <li><a href="#">Pent</a></li>
+                                        <li><a href="#">Boxer</a></li>
+                                    </ul>
+                                    <a href="#" class="categories-banner">
+                                        <img src="images/mens-banner.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- Single Catagories Item -->
+                                <div class="categories-item ">
+                                    <div class="categories-title">Electronic</div>
+                                    <ul>
+                                        <li><a href="#">Top</a></li>
+                                        <li><a href="#">Perfume</a></li>
+                                        <li><a href="#">Mackup</a></li>
+                                        <li><a href="#">Table</a></li>
+                                        <li><a href="#">Headphone</a></li>
+                                    </ul>
+                                    <a href="#" class="categories-banner">
+                                        <img src="images/womens-banner.jpg" alt="">
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li class="c-menu">
+                            <a class="c-nav" href="#">Men's</a>
+                            <ul class="categories-drop">
+                                <li><a href="#">Shirt </a></li>
+                                <li><a href="#">Pent</a></li>
+                                <li><a href="#">Shoe</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Glass</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="c-menu">
+                            <a href="#" class="c-nav"> Women's</a>
+                            <ul class="categories-drop">
+                                <li><a href="#">Shirt </a></li>
+                                <li><a href="#">Pent</a></li>
+                                <li><a href="#">Shoe</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Glass</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="c-menu">
+                            <a class="c-nav" href=#">Jewelry</a>
+                            <ul class="categories-drop">
+                                <li><a href="#">Shirt </a></li>
+                                <li><a href="#">Pent</a></li>
+                                <li><a href="#">Shoe</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Glass</a></li>
+                            </ul>
+                        </li>
+                        <li class="c-menu">
+                            <a class="c-nav" href="#">Perfume</a>
+                            <ul class="categories-drop">
+                                <li><a href="#">Shirt </a></li>
+                                <li><a href="#">Pent</a></li>
+                                <li><a href="#">Shoe</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Glass</a></li>
+                            </ul>
+                        </li>
+                        <li class="c-menu"><a class="c-nav" href="#blog">Blog</a></li>
+                        <li class="c-menu"><a class="c-nav" href="#">Hot Offer</a></li>
+                    </ul>
+                </nav>
+
+        </header>
+
+
+
+
+
+
+
+        <main>
+
+            <!-- _________________||  Banner  ||________________ -->
+            <section>
+                <div class="banner">
+                    <div class="container">
+                        <div class="banner-slider d-flex gap-15 has-scrollbar">
+
+                            <!-- Single Slider -->
+                            <div class="banner-slider-item ">
+                                <img src="images/banner-1.jpg" alt="" class="banner-img">
+
+                                <div class="banner-content flex-column gap-10">
+                                    <div class="banner-subtitle">Trending Item</div>
+                                    <div class="d-none sale-offer">Sale Offer</div>
+                                    <div class="banner-title uppercase">women's latest fashion sale</div>
+                                    <div class="d-none start">starting at $ <strong>28</strong>.00</div>
+                                    <button class="btn uppercase">shop now</button>
+                                </div>
+                            </div>
+                            <!-- Single Slider -->
+                            <div class="banner-slider-item">
+                                <img src="images/banner-2.jpg" alt="" class="banner-img">
+
+                                <div class="banner-content flex-column gap-10">
+                                    <div class="banner-subtitle">Trending Item</div>
+                                    <div class="d-none sale-offer">Sale Offer</div>
+                                    <div class="banner-title uppercase">women's latest fashion sale</div>
+                                    <div class="d-none start">starting at $ <strong>28</strong>.00</div>
+                                    <button class="btn uppercase">shop now</button>
+                                </div>
+                            </div>
+                            <!-- Single Slider -->
+                            <div class="banner-slider-item">
+                                <img src="images/banner-3.jpg" alt="" class="banner-img">
+
+                                <div class="banner-content flex-column gap-10">
+                                    <div class="banner-subtitle">Trending Item</div>
+                                    <div class="d-none sale-offer">Sale Offer</div>
+                                    <div class="banner-title uppercase">women's latest fashion sale</div>
+                                    <div class="d-none start">starting at $ <strong>28</strong>.00</div>
+                                    <button class="btn uppercase">shop now</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- _________________||  Catagory  ||________________ -->
+            <section>
+                <div class="catagory-section">
+                    <div class="container">
+                        <div class="catagory-slider  d-flex gap-15 has-scrollbar">
+
+                            <!-- Single Catagory Item -->
+                            <div class=" catagory-slider-item flex-center gap-15">
+
+                                <!-- Image -->
+                                <div class="catagory-slider-img">
+                                    <img src="images/icons/dress.svg" width="50px" alt="">
+                                </div>
+
+                                <!-- Catagory Item Content -->
+                                <div class="catagory-itme-content">
+                                    <div class="flex-between">
+                                        <div class="uppercase">Dress & Frock</div>
+                                        <div class="total">(20)</div>
+                                    </div>
+
+                                    <button class="btn show-all">
+                                        show ALl
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Single Catagory Item -->
+                            <div class="catagory-slider-item  flex-center gap-15">
+
+                                <!-- Image -->
+                                <div class="catagory-slider-img">
+                                    <img src="images/icons/cosmetics.svg" width="50px" alt="">
+                                </div>
+
+                                <!-- Catagory Item Content -->
+                                <div class="catagory-itme-content">
+                                    <div class="flex-between">
+                                        <div class="uppercase">Cosmetic </div>
+                                        <div class="total">(20)</div>
+                                    </div>
+
+                                    <button class="btn show-all">
+                                        show ALl
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Single Catagory Item -->
+                            <div class="catagory-slider-item  flex-center gap-15">
+
+                                <!-- Image -->
+                                <div class="catagory-slider-img">
+                                    <img src="images/icons/watch.svg" width="50px" alt="">
+                                </div>
+
+                                <!-- Catagory Item Content -->
+                                <div class="catagory-itme-content">
+                                    <div class="flex-between">
+                                        <div class="uppercase">Watch Unick</div>
+                                        <div class="total">(27)</div>
+                                    </div>
+
+                                    <button class="btn show-all">
+                                        show ALl
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Single Catagory Item -->
+                            <div class="catagory-slider-item  flex-center gap-15">
+
+                                <!-- Image -->
+                                <div class="catagory-slider-img">
+                                    <img src="images/icons/glasses.svg" width="50px" alt="">
+                                </div>
+
+                                <!-- Catagory Item Content -->
+                                <div class="catagory-itme-content">
+                                    <div class="flex-between">
+                                        <div class="uppercase">Glass </div>
+                                        <div class="total">(12)</div>
+                                    </div>
+
+                                    <button class="btn show-all">
+                                        show ALl
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Mediel Div -->
+            <div class="mediel-area">
+                <!-- _________________||  New Arrivals  ||________________ -->
+                <section>
+                    <div class="new-arrivals">
+                        <div class="container">
+                            <div class="new-arrivals-area">
+
+                                <div class="section-title">
+                                    New Arrivals
+                                </div>
+
+                                <div class="new-arrivals-wrapper has-scrollbar d-flex gap-20">
+
+                                    <!-- _________  New Arrivals Items  _________ -->
+                                    <div class="new-arrivals-items  flex-column gap-15 mt-4">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">New Short Full Sleeve Shoes</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$11.00</strong>
+                                                    <del class="old-price">$15.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Relaxed Short Full Sleeve T-shirt</div>
+                                                <div class="catagory">Jacket</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$11.00</strong>
+                                                    <del class="old-price">$15.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Relaxed Short Full Sleeve T-shirt</div>
+                                                <div class="catagory">Girls Shirt</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$15.00</strong>
+                                                    <del class="old-price">$19.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/4.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Men's & Women Cap</div>
+                                                <div class="catagory">Cap</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$10.00</strong>
+                                                    <del class="old-price">$12.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- _________  New Arrivals Items  _________ -->
+                                    <div class="new-arrivals-items  flex-column gap-15 mt-4">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Relaxed Short Full Sleeve T-shirt</div>
+                                                <div class="catagory">Clothes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$12.00</strong>
+                                                    <del class="old-price">$18.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Relaxed Short Full Sleeve T-shirt</div>
+                                                <div class="catagory">Jacket</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$11.00</strong>
+                                                    <del class="old-price">$15.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Relaxed Short Full Sleeve T-shirt</div>
+                                                <div class="catagory">Girls Shirt</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$15.00</strong>
+                                                    <del class="old-price">$19.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="new-arrivals-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div>
+                                                <img width="100px" src="images/products/4.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="new-arrivals-item-content flex-column gap-5">
+                                                <div class="n-title">Men's & Women Cap</div>
+                                                <div class="catagory">Cap</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$10.00</strong>
+                                                    <del class="old-price">$12.00</del>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <!-- _________________||  Trending  ||________________ -->
+                <section>
+                    <div class="trending">
+                        <div class="container">
+                            <div class="trending-area">
+                                <div class="section-title text-left">
+                                    Trending
+                                </div>
+
+                                <div class="trending-wrapper has-scrollbar d-flex gap-20 ">
+
+                                    <!-- _______ Trending Items  _______ -->
+                                    <div class="trending-items  mt-4 flex-column gap-10">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/sports-1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Running & Trekking Shoes - White</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$52.00</strong>
+                                                    <del class="old-price">$47.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/sports-2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Men's & Trekking Shoes - Black</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$49.00</strong>
+                                                    <del class="old-price">$43.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/sports-3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Running & Trekking Shoes - White</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$52.00</strong>
+                                                    <del class="old-price">$47.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/sports-4.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">New & Trekking Shoes - White</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$59.00</strong>
+                                                    <del class="old-price">$49.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <!-- _______ Trending Items  _______ -->
+                                    <div class="trending-items mt-4 flex-column gap-10">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Shose Men's Leader Soft</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$58.00</strong>
+                                                    <del class="old-price">$49.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-1_1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Men's & Trekking Shoes - Black</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$48.00</strong>
+                                                    <del class="old-price">$43.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Men's Shose Black Leader and Soft</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$52.00</strong>
+                                                    <del class="old-price">$47.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">New & Trekking Shoes - White Soft</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$59.00</strong>
+                                                    <del class="old-price">$49.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                </section>
+
+
+
+
+
+
+                <!-- _________________||  Top Rated  ||________________ -->
+                <section>
+                    <div class="top-rated">
+                        <div class="container">
+                            <div class="top-rated-area">
+                                <div class="section-title text-left">
+                                    Top Rated
+                                </div>
+
+                                <div class="top-rated-wrapper has-scrollbar d-flex gap-20 ">
+
+                                    <!-- _______ Trending Items  _______ -->
+                                    <div class="top-rated-items mt-4 flex-column gap-10">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class="trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/belt.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Men's Belt Leather Pouch Brown</div>
+                                                <div class="catagory">Men's</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$23.00</strong>
+                                                    <del class="old-price">$22.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/watch-1.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Pocket Watch Leather Pouch</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$29.00</strong>
+                                                    <del class="old-price">$27.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/watch-3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">New Alam Watch & Trekking Gold</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$26.00</strong>
+                                                    <del class="old-price">$25.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/jewellery-3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Silver Deer Heart Necklace</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$59.00</strong>
+                                                    <del class="old-price">$47.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <!-- _______ Trending Items  _______ -->
+                                    <div class="trending-items mt-4 flex-column gap-10">
+
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shampoo.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">shampoo conditioner packs</div>
+                                                <div class="catagory">Cosmetics</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$22.00</strong>
+                                                    <del class="old-price">$20.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/jewellery-2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Rose Gold Earrings</div>
+                                                <div class="catagory">Ring</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$46.00</strong>
+                                                    <del class="old-price">$43.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-2.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">Men's Shose Black Leader and Soft</div>
+                                                <div class="catagory">Shoes</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$52.00</strong>
+                                                    <del class="old-price">$47.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Single New Arrivals Item -->
+                                        <div class=" trending-item border d-flex gap-20">
+                                            <!-- Image -->
+                                            <div class="img-wrapper">
+                                                <img width="100px" src="images/products/shoe-3.jpg" alt=""
+                                                    class="new-arrivals-item-img">
+                                            </div>
+
+                                            <!-- Content -->
+                                            <div class="trending-item-content flex-column gap-5">
+                                                <div class="n-title">New & Trekking Shoes - White Soft</div>
+                                                <div class="catagory">Sports</div>
+
+                                                <div class="price d-flex gap-15">
+                                                    <strong class="new-price">$59.00</strong>
+                                                    <del class="old-price">$49.00</del>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                </section>
+            </div>
+
+            <div class="bottom-section container">
+
+                <!-- Desktop Sidebar -->
+                <div class="sidebar d-none">
+                    <div class="">
+                        <div class="sidebar-wrapper">
+                            <div class="sidebar-top border">
+                                <div class="section-title uppercase text-left">
+                                    Category
+                                </div>
+
+                                <div class="sidebar-top-items mt-4 flex-column gap-15">
+
+                                    <!-- Single Sidebar Item -->
+                                    <div class="sidebar-top-item flex-between">
+                                        <!-- Left -->
+                                        <div class="left flex-center gap-10">
+                                            <img width="29px" src="images/icons/cosmetics.svg" alt="">
+                                            <div class="left-title">Cosmetics</div>
+                                        </div>
+                                        <!-- Right -->
+                                        <div class="right"><i class='bx bx-plus'></i></div>
+                                    </div>
+
+                                    <!-- Single Sidebar Item -->
+                                    <div class="sidebar-top-item flex-between">
+                                        <!-- Left -->
+                                        <div class="left flex-center gap-10">
+                                            <img width="29px" src="images/icons/coat.svg" alt="">
+                                            <div class="left-title">Dress</div>
+                                        </div>
+                                        <!-- Right -->
+                                        <div class="right"><i class='bx bx-plus'></i></div>
+                                    </div>
+
+                                    <!-- Single Sidebar Item -->
+                                    <div class="sidebar-top-item flex-between">
+                                        <!-- Left -->
+                                        <div class="left flex-center gap-10">
+                                            <img width="29px" src="images/icons/glasses.svg" alt="">
+                                            <div class="left-title">Sun Glass</div>
+                                        </div>
+                                        <!-- Right -->
+                                        <div class="right"><i class='bx bx-plus'></i></div>
+                                    </div>
+
+                                    <!-- Single Sidebar Item -->
+                                    <div class="sidebar-top-item flex-between">
+                                        <!-- Left -->
+                                        <div class="left flex-center gap-10">
+                                            <img width="29px" src="images/icons/shoes.svg" alt="">
+                                            <div class="left-title">Shoes</div>
+                                        </div>
+                                        <!-- Right -->
+                                        <div class="right"><i class='bx bx-plus'></i></div>
+                                    </div>
+
+
+                                    <!-- Single Sidebar Item -->
+                                    <div class="sidebar-top-item flex-between">
+                                        <!-- Left -->
+                                        <div class="left flex-center gap-10">
+                                            <img width="29px" src="images/icons/perfume.svg" alt="">
+                                            <div class="left-title">Cosmetics</div>
+                                        </div>
+                                        <!-- Right -->
+                                        <div class="right"><i class='bx bx-plus'></i></div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- SideBar Bottom -->
+                            <div class="sidebar-bottom mt-4">
+                                <ul class="sidebar-bottom-items flex-column gap-15">
+                                    <!-- Single Catagory item -->
+                                    <li class="best-seller-item flex-between gap-20 w-100">
+                                        <a href=" #"><img width="89px" src="images/products/1.jpg" alt=""></a>
+                                        <div class="content flex-column gap-5">
+                                            <p class="name">Baby Farbic Shoes</p>
+                                            <div class="rating flex-center ">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+                                            <div class="prices flex-center gap-20">
+                                                <del class=" old-price">$14.00</del>
+                                                <strong class="new-price">$12.00</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Single Catagory item -->
+                                    <li class="best-seller-item flex-between gap-20">
+                                        <a href=" #"><img width="89px" src="images/products/2.jpg" alt=""></a>
+                                        <div class="content flex-column gap-5">
+                                            <p class="name">Men's Hoodies T-shirt </p>
+                                            <div class="rating flex-center">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+                                            <div class="prices flex-center gap-20">
+                                                <del class=" old-price">$14.00</del>
+                                                <strong class="new-price">$12.00</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="bottom-section-right">
+                    <!-- _________________||  Deal  ||________________ -->
+                    <section>
+                        <div class="deal">
+                            <div class="container">
+                                <div class="deal-area">
+
+                                    <div class="section-title text-left">
+                                        Deal Of The Day
+                                    </div>
+
+                                    <!-- Deal Items -->
+                                    <div class="deal-items has-scrollbar mt-4 d-flex gap-20">
+                                        <!-- Single Deal Item -->
+                                        <div class="deal-item border">
+
+                                            <div class="deal-item-img">
+                                                <img src="images/products/shampoo.jpg" alt="">
+                                            </div>
+
+                                            <div class="deal-item-content flex-column gap-15 mt-3">
+
+                                                <!-- _____Rating_____ -->
+                                                <div class="rating d-flex">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+
+                                                <div>
+                                                    <a href="#" class=" w-100 uppercase">
+                                                        <div class="sub-title">
+                                                            shampoo, conditioner & facewash packs
+                                                        </div>
+                                                    </a>
+                                                    <p class="description">This item is Lorem, ipsum dolor sit amet
+                                                        consectetur
+                                                        adipisicing elit.
+                                                        Eius,
+                                                        heir color and shining is well.so you can choose this.
+                                                        iste?
+                                                    </p>
+                                                </div>
+
+                                                <!-- _____Price_____ -->
+                                                <div class="prices d-flex  gap-10">
+                                                    <strong class="new-price">$12.00</strong>
+                                                    <del class=" old-price">$14.00</del>
+                                                </div>
+
+                                                <!-- _____Button_____ -->
+                                                <div>
+                                                    <button class="btn addToCart uppercase">Add To Cart</button>
+                                                </div>
+
+                                                <!--____  Sold And Available ____ -->
+                                                <div class="sold-available">
+                                                    <div class="sold uppercase flex-between">
+                                                        <span>Already sold: <strong>11</strong></span>
+                                                        <span>Avilable: <strong>41</strong></span>
+                                                    </div>
+                                                    <div class="available-range">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Offer Count -->
+                                                <div class="offer">
+                                                    <div class="offer-title uppercase">
+                                                        Hurry up! offer ends in:
+                                                    </div>
+
+                                                    <div class="mt-2 offer-items d-flex">
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">14</div>
+                                                            <div class="day">Days</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">11</div>
+                                                            <div class="day">Hours</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">24</div>
+                                                            <div class="day">Min</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">56</div>
+                                                            <div class="day">Sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Single Deal Item -->
+                                        <div class="deal-item border">
+
+                                            <div class="deal-item-img">
+                                                <img src="images/products/jewellery-1.jpg" alt="">
+                                            </div>
+
+                                            <div class="deal-item-content flex-column gap-15 mt-3">
+
+                                                <!-- _____Rating_____ -->
+                                                <div class="rating d-flex">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+
+                                                <div>
+                                                    <a href="#" class=" w-100 uppercase">
+                                                        <div class="sub-title">
+                                                            Rose Gold diamonds Earring
+                                                        </div>
+                                                    </a>
+                                                    <p class="description">This item is Lorem, ipsum dolor sit amet good
+                                                        adipisicing elit.
+                                                        Eius,
+                                                        heir color and shining is well.so you can choose
+                                                    </p>
+                                                </div>
+
+                                                <!-- _____Price_____ -->
+                                                <div class="prices d-flex  gap-10">
+                                                    <strong class="new-price">$22.00</strong>
+                                                    <del class=" old-price">$19.00</del>
+                                                </div>
+
+                                                <!-- _____Button_____ -->
+                                                <div>
+                                                    <button class="btn addToCart uppercase">Add To Cart</button>
+                                                </div>
+
+                                                <!--____  Sold And Available ____ -->
+                                                <div class="sold-available">
+                                                    <div class="sold uppercase flex-between">
+                                                        <span>Already sold: <strong>2</strong></span>
+                                                        <span>Avilable: <strong>21</strong></span>
+                                                    </div>
+                                                    <div class="available-range">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Offer Count -->
+                                                <div class="offer">
+                                                    <div class="offer-title uppercase">
+                                                        Hurry up! offer ends in:
+                                                    </div>
+
+                                                    <div class="mt-2 offer-items d-flex">
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">14</div>
+                                                            <div class="day">Days</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">11</div>
+                                                            <div class="day">Hours</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">24</div>
+                                                            <div class="day">Min</div>
+                                                        </div>
+                                                        <div class=" offer-item flex-column  text-center">
+                                                            <div class="number">56</div>
+                                                            <div class="day">Sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+                    <!-- _________________||  New Products  ||________________ -->
+                    <section>
+                        <div class="new-products">
+                            <div class="container">
+                                <div class="section-title">
+                                    New Products
+                                </div>
+                                <div class="new-product-items grid mt-4 flex-column gap-20">
+
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="offer">10%</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/jacket-4.jpg" alt="">
+                                            <img class="hide-image" src="images/products/jacket-3.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$22.00</strong>
+                                                <del class=" old-price">$19.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <!-- <div class="offer d-none">10%</div> -->
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/shirt-1.jpg" alt="">
+                                            <img class="hide-image" src="images/products/shirt-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$22.00</strong>
+                                                <del class=" old-price">$19.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/party-wear-1.jpg" alt="">
+                                            <img class="hide-image" src="images/products/party-wear-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$32.00</strong>
+                                                <del class=" old-price">$27.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/4.jpg" alt="">
+                                            <img class="hide-image" src="images/products/jacket-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$50.00</strong>
+                                                <del class=" old-price">$49.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/watch-4.jpg" alt="">
+                                            <img class="hide-image" src="images/products/watch-3.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$50.00</strong>
+                                                <del class=" old-price">$49.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/shirt-1.jpg" alt="">
+                                            <img class="hide-image" src="images/products/shirt-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$50.00</strong>
+                                                <del class=" old-price">$49.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/party-wear-1.jpg" alt="">
+                                            <img class="hide-image" src="images/products/party-wear-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$50.00</strong>
+                                                <del class=" old-price">$49.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- _____ Single Product Item _____ -->
+                                    <div class="new-product-item border">
+                                        <!-- Base -->
+                                        <div class="base">
+                                            <div class="sale">sale</div>
+                                        </div>
+
+                                        <div class="hide-icons flex-column gap-5">
+                                            <div class="icon border"><i class='bx bx-heart'></i></div>
+                                            <div class="icon border"><i class='bx bxs-low-vision'></i></div>
+                                            <div class="icon border"><i class='bx bx-shuffle'></i></div>
+                                            <div class="icon border"><i class='bx bx-shopping-bag'></i></div>
+                                        </div>
+
+                                        <!-- Image -->
+                                        <div class="image">
+                                            <img class="display-image" src="images/products/jacket-1.jpg" alt="">
+                                            <img class="hide-image" src="images/products/jacket-2.jpg" alt="">
+                                        </div>
+
+
+                                        <!-- ____ Item Content ____ -->
+                                        <div class="product-item-content flex-column gap-10 mt-3">
+
+                                            <a href="#">
+                                                <div class="type uppercase">jacket</div>
+                                                <div class="item-name mt-1">Mens Winter Leathers Jackets</div>
+                                            </a>
+
+                                            <!-- _____Rating_____ -->
+                                            <div class="rating d-flex">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+
+                                            <!-- _____Price_____ -->
+                                            <div class="prices d-flex  gap-10">
+                                                <strong class="new-price">$50.00</strong>
+                                                <del class=" old-price">$49.00</del>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+                    <!-- _________________||  Testimonial  ||________________ -->
+                    <section>
+                        <div class="testimonial">
+                            <div class="container">
+
+                                <div class="testimonial-head section-title">
+                                    Testimonial
+                                </div>
+
+                                <div class="testimonial-items flex-between gap-25">
+                                    <div class="testimonial-cart border flex-column gap-10 mt-4">
+                                        <img class="testimonial-img" src=" images/testimonial-1.jpg" alt="">
+                                        <div class="testimonial-name section-title uppercase">MST josy</div>
+                                        <p class="text-center post">CEO & Founder </p>
+                                        <img src="images/icons/quotes.svg" width="25px" alt="">
+                                        <div class="desc text-center mt-1">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, doloremque
+                                            repellendus
+                                            and other
+                                            nulla perspiciatis minima repudiandae!
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-cart d-none border flex-column gap-10 mt-4">
+                                        <img class="testimonial-img" src=" images/testimonial-1.jpg" alt="">
+                                        <div class="testimonial-name section-title uppercase">MST josy</div>
+                                        <p class="text-center post">CEO & Founder </p>
+                                        <img src="images/icons/quotes.svg" width="25px" alt="">
+                                        <div class="desc text-center mt-1">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, doloremque
+                                            repellendus
+                                            and other
+                                            nulla perspiciatis minima repudiandae!
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                    <div class="services-cta">
+                        <!-- _________________||  CTA Banner  ||________________ -->
+                        <section>
+                            <div class="cta-banner">
+                                <div class="container">
+                                    <div class="cta-banner-area">
+
+                                        <div class="cta-img"><img src="images/cta-banner.jpg" alt=""></div>
+
+                                        <a href="#">
+                                            <div class="cta-banner-content flex-column gap-10">
+                                                <div class="discount uppercase">15% discount</div>
+                                                <div class="cta-title section-title">Summer Collection</div>
+                                                <div class="stat">Starting @$10</div>
+                                                <button class="btn uppercase border">Shop now</button>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <!-- _________________||  Our Service  ||________________ -->
+                        <section>
+                            <div class="our-services">
+                                <div class="container">
+                                    <div class="section-title">Our Services</div>
+
+                                    <div class="our-services-items grid mt-4 flex-column gap-20">
+                                        <div class="our-services-item d-flex gap-10">
+                                            <div class="img-wrapper">
+                                                <img src="images/Screenshot_1.png" alt="">
+                                            </div>
+                                            <div class="our-service-content">
+                                                <div class="service-title">Worldwide Delivery</div>
+                                                <p>For Order Over $100</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="our-services-item d-flex gap-10">
+                                            <div class="img-wrapper">
+                                                <img src="images/Screenshot_2.png" alt="">
+                                            </div>
+                                            <div class="our-service-content">
+                                                <div class="service-title">One Day delivery</div>
+                                                <p>USA Orders Only</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="our-services-item d-flex gap-10">
+                                            <div class="img-wrapper">
+                                                <img src="images/Screenshot_2.png" alt="">
+                                            </div>
+                                            <div class="our-service-content">
+                                                <div class="service-title">Next Day delivery</div>
+                                                <p>UK Orders Only</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="our-services-item d-flex gap-10">
+                                            <div class="img-wrapper">
+                                                <img src="images/Screenshot_3.png" alt="">
+                                            </div>
+                                            <div class="our-service-content">
+                                                <div class="service-title">Best Online Support</div>
+                                                <p>Hours: 8AM - 11PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="our-services-item d-flex gap-10">
+                                            <div class="img-wrapper">
+                                                <img src="images/Screenshot_4.png" alt="">
+                                            </div>
+                                            <div class="our-service-content">
+                                                <div class="service-title">Return & Policy</div>
+                                                <p>For Order Over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+
+
+                    <!-- _________________|| Blogs ||________________ -->
+                    <section>
+                        <div class="blog">
+                            <div class="container">
+                                <div class="blog-items  has-scrollbar d-flex gap-20">
+
+                                    <!-- _____Single Blog Item_____ -->
+                                    <div class="blog-item">
+                                        <!-- Blog Image -->
+                                        <div class="blog-img">
+                                            <img src="images/blog-1.jpg" alt="">
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content mt-4">
+                                            <a href="#">
+                                                <div class="catagory">Fashion</div>
+                                                <div class="section-title">
+                                                    Clothes Retail KPIs 2021 Guide for Clothes Executives.
+                                                </div>
+                                                <p class="date mt-2">By Mr Admin / Jan 02, 2024</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- _____Single Blog Item_____ -->
+                                    <div class="blog-item">
+                                        <!-- Blog Image -->
+                                        <div class="blog-img">
+                                            <img src="images/blog-2.jpg" alt="">
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content mt-4">
+                                            <a href="#">
+                                                <div class="catagory">Clothes</div>
+                                                <div class="section-title">
+                                                    Clothes Retail KPIs 2021 Guide for Clothes Executives.
+                                                </div>
+                                                <p class="date mt-2">By Mr Admin / Feb 06, 2024</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- _____Single Blog Item_____ -->
+                                    <div class="blog-item">
+                                        <!-- Blog Image -->
+                                        <div class="blog-img">
+                                            <img src="images/blog-3.jpg" alt="">
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content mt-4">
+                                            <a href="#">
+                                                <div class="catagory">Fashion</div>
+                                                <div class="section-title">
+                                                    Clothes Retail KPIs 2021 Guide for Clothes Executives.
+                                                </div>
+                                                <p class="date mt-2">By Mr Ceo / March 02, 2024</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- _____Single Blog Item_____ -->
+                                    <div class="blog-item">
+                                        <!-- Blog Image -->
+                                        <div class="blog-img">
+                                            <img src="images/blog-4.jpg" alt="">
+                                        </div>
+
+                                        <!-- Blog Content -->
+                                        <div class="blog-content mt-4">
+                                            <a href="#">
+                                                <div class="catagory">Fashion</div>
+                                                <div class="section-title">
+                                                    Clothes Retail KPIs 2021 Guide for Clothes Executives.
+                                                </div>
+                                                <p class="date mt-2">By Mr Admin / Jan 02, 2024</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+        <!-- _________________||  Footer  ||________________ -->
+        <footer>
+            <div class="footer">
+                <div class="">
+                    <!-- Brand Footer -->
+                    <div class="brand-footer container">
+                        <div class="section-title uppercase text-left">brand directory</div>
+                        <div class="brand-footer-items flex-column gap-20">
+
+                            <!-- Single Brand Item -->
+                            <div class="brand-footer-item d-flex gap-20">
+                                <!-- Main Brand -->
+                                <div class="sub-title text-left uppercase">
+                                    Fashion:
+                                </div>
+                                <!-- Sub Brand -->
+                                <div class="brand-footer-item-content">
+                                    <a href="#">T-Shirt</a>
+                                    <a href="#">Shirt</a>
+                                    <a href="#">Shorts & Jeans</a>
+                                    <a href="#">Jacket</a>
+                                    <a href="#">Dress & Frock</a>
+                                    <a href="#">Innerwear</a>
+                                    <a href="#">Hosiery</a>
+                                </div>
+                            </div>
+
+                            <!-- Single Brand Item -->
+                            <div class="brand-footer-item d-flex gap-20">
+                                <!-- Main Brand -->
+                                <div class="sub-title text-left uppercase">
+                                    Footwear:
+                                </div>
+                                <!-- Sub Brand -->
+                                <div class="brand-footer-item-content">
+                                    <a href="#">Sport</a>
+                                    <a href="#">Formal</a>
+                                    <a href="#">Boots</a>
+                                    <a href="#">Casual</a>
+                                    <a href="#">Cowboy Shoes</a>
+                                    <a href="#">Safety Shoes</a>
+                                    <a href="#">Branded</a>
+                                    <a href="#">Firstcopy</a>
+                                    <a href="#">Long Shoes</a>
+                                </div>
+                            </div>
+
+                            <!-- Single Brand Item -->
+                            <div class="brand-footer-item d-flex gap-20">
+                                <!-- Main Brand -->
+                                <div class="sub-title text-left uppercase">
+                                    Jewellery:
+                                </div>
+                                <!-- Sub Brand -->
+                                <div class="brand-footer-item-content">
+                                    <a href="#">Necklace</a>
+                                    <a href="#">Earrings</a>
+                                    <a href="#">Couple Rings</a>
+                                    <a href="#">Pendants</a>
+                                    <a href="#">Crystal</a>
+                                    <a href="#">Bangles</a>
+                                    <a href="#">Bracelets</a>
+                                    <a href="#">Nosepin</a>
+                                    <a href="#">Chain</a>
+                                    <a href="#">Earrings</a>
+                                    <a href="#">Couple Rings</a>
+                                </div>
+                            </div>
+
+                            <!-- Single Brand Item -->
+                            <div class="brand-footer-item d-flex gap-20">
+                                <!-- Main Brand -->
+                                <div class="sub-title text-left uppercase">
+                                    Cosmetics:
+                                </div>
+                                <!-- Sub Brand -->
+                                <div class="brand-footer-item-content">
+                                    <a href="#">Shampoo</a>
+                                    <a href="#">Bodywash</a>
+                                    <a href="#">Face wash & Jeans</a>
+                                    <a href="#">Mackeup Kit</a>
+                                    <a href="#">Dress & Frock</a>
+                                    <a href="#">Innerwear</a>
+                                    <a href="#">Lipstick</a>
+                                    <a href="#">Skin Cream</a>
+                                    <a href="#">Skin Loson</a>
+                                    <a href="#">Body Soap</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Categories Footer -->
+                    <div class="categories-footer border-top container">
+                        <div class="categories-footer-items  mt-4 flex-column gap-20">
+
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item">
+                                <div class="categories-item-title">
+                                    popular categories
+                                </div>
+                                <div class="categories-item-content mt-4">
+                                    <ul class="flex-column gap-5">
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Electronic</a></li>
+                                        <li><a href="#">Cosmetic</a></li>
+                                        <li><a href="#">Health</a></li>
+                                        <li><a href="#">Watches</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item">
+                                <div class="categories-item-title">
+                                    products
+                                </div>
+                                <div class="categories-item-content mt-4">
+                                    <ul class="flex-column gap-5">
+                                        <li><a href="#">Prices Drop</a></li>
+                                        <li><a href="#">New Products</a></li>
+                                        <li><a href="#">Best Sales</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item">
+                                <div class="categories-item-title">
+                                    Our Company
+                                </div>
+                                <div class="categories-item-content mt-4">
+                                    <ul class="flex-column gap-5">
+                                        <li><a href="#">Delivery</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Terms And Conditions</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Secure Payment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item">
+                                <div class="categories-item-title">
+                                    Services
+                                </div>
+                                <div class="categories-item-content mt-4">
+                                    <ul class="flex-column gap-5">
+                                        <li><a href="#">Delivery</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Terms And Conditions</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Secure Payment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item contact">
+                                <div class="categories-item-title">
+                                    Contact
+                                </div>
+                                <div class="categories-item-content mt-4">
+                                    <ul class="flex-column  gap-10">
+
+                                        <!-- Contact single Content -->
+                                        <li class="contact-content d-flex gap-20">
+                                            <div class="icon mt-1">
+                                                <i class='bx bx-map'></i>
+                                            </div>
+                                            <div class="contact-info">
+                                                House 25, Road 5, Block-A, Mirpur
+                                                <br>Dhaka-Bangladesh
+                                            </div>
+                                        </li>
+
+                                        <!-- Contact single Content -->
+                                        <li class="contact-content d-flex gap-20">
+                                            <div class="icon mt-1">
+                                                <i class='bx bx-phone-call'></i>
+                                            </div>
+                                            <div class="contact-info">
+                                                (++53435 23434 232) <br>
+                                                (++53435 23434 121)
+                                            </div>
+                                        </li>
+
+                                        <li class="contact-content d-flex gap-20">
+                                            <div class="icon mt-1">
+                                                <i class='bx bx-envelope'></i>
+                                            </div>
+                                            <div class="contact-info">
+                                                @example.com
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Single Categories Item -->
+                            <div class="categories-footer-item">
+                                <div class="categories-item-title">
+                                    Follow us
+                                </div>
+                                <div class="categories-item-content social mt-4">
+                                    <ul class="d-flex  gap-10">
+                                        <li>
+                                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Footer Bottom -->
+                    <div class="footer-bottom border-top ">
+                        <div class="contianer">
+                            <div class="footer-bottom-items mt-4 container">
+                                <div class="cart">
+                                    <img class="text-center" src="images/payment.png" alt="">
+                                </div>
+                                <div class="copyright mt-3 text-center">
+                                    Copyright &copy; tanvir ahmed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <div class=" overlay" data-overlay>
+        </div>
+
+        <!-- _____________||   Modal   ||_____________ -->
+        <div class="modal closed" data-modal>
+            <div class="modal-close-overlay" data-modal-overlay></div>
+
+            <!--_____  Modal Content  _____ -->
+            <div class="modal-content">
+                <!--  Close Button  -->
+                <button class="modal-close-btn" data-modal-close>&times;</button>
+
+                <div class="newsletter">
+                    <div class="newsletter-img">
+                        <img src="images/newsletter.png" alt="">
+                    </div>
+                    <h3 class="section-title">Subcribe <br> Newsletter.</h3>
+                    <p class="newsletter-desc my-4">Subscribe the <strong>Anon</strong> to get
+                        latest
+                        products and
+                        discount
+                        update.</p>
+                    <form action="#" class="">
+                        <input class="input-controls" type="text" placeholder="Email Address" required>
+                        <button class="btn uppercase btn-dark mt-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- _____________||   Toast Notification   ||_____________ -->
+        <div class="notification-toast closed" data-toast>
+            <button class="toast-close-btn" data-toast-close>&times;</button>
+            <div class="flex-start gap-15">
+                <div class="toast-image ">
+                    <img src="images/products/jewellery-1.jpg" alt="">
+                </div>
+
+                <div class="toast-details">
+                    <p>Someone in new just bought</p>
+                    <h4 class="sub-title text-left mt-2">Rose Gold Earrings</h4>
+                    <p class="time">2 Minutes ago</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

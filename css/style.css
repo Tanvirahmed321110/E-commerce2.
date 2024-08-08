@@ -1,0 +1,502 @@
+/*______ Google Font ______ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --header-height: 3.5rem;
+
+    /*________________||    Colors   ||________________*/
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --salmon-pink: hsl(353, 100%, 78%);
+    --sandy-brown: hsl(29, 90%, 65%);
+    --bittersweet: hsl(0, 100%, 70%);
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+
+
+    /*________________||    Font Size   ||________________*/
+    --body-font: 'Poppins', sans-serif;
+
+    --xs-font: 13px;
+    --sm-font: 15px;
+    --md-font: 16px;
+    --lg-font: 18px;
+    --xl-font: 22px;
+    --xxl-font: 26px;
+
+
+    /*______ Font weight ______*/
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+
+    /*______ Border Radius ______*/
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
+
+    /*______ transition  ______*/
+    --transition-timing: 0.2s ease;
+}
+
+
+
+/* ======+=  Responsive typography  =+======*/
+/* @media screen and (max-width: 992px) {
+    :root {
+        --biggest-font: 32px;
+        --h1-font: 24px;
+        --h2-font: 20px;
+        --h3-font: 16px;
+        --normal-font: 15px;
+        --small-font: 13px;
+        --smaller-font: 12px;
+    }
+} */
+
+
+
+/*++++++++++++  Global || Reset  ++++++++++++*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--white);
+    color: var(--eerie-black);
+    padding-bottom: 50px;
+}
+
+/* _______  scrollbar style   _______ */
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white);
+    border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+    font-size: var(--sm-font);
+}
+
+input,
+button,
+textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: inherit;
+}
+
+
+section {
+    margin: 40px 0;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: var(--sm-font);
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+input {
+    padding: 10px 12px;
+}
+
+
+
+
+/*++++++++++++  Reuseable Class  ++++++++++++*/
+
+
+/* _____  title size _____ */
+.section-title {
+    font-size: var(--lg-font);
+    text-align: center;
+    font-weight: var(--weight-600);
+}
+
+.sub-title {
+    font-size: var(--md-font);
+    text-align: center;
+    font-weight: var(--weight-600);
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.title {
+    color: var(--eerie-black);
+    font-size: var(--fs-5);
+    font-weight: var(--weight-600);
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cultured);
+    margin-bottom: 30px;
+}
+
+/* _______  Alignment  _______ */
+.text-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+/* _______  Width and Height ______ */
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* _______  Border  _______ */
+.border {
+    border: 1px solid var(--cultured);
+}
+
+.border-top {
+    border-top: 1px solid var(--cultured);
+}
+
+
+/* _______ Display _______ */
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+
+.input-controls {
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    padding: 12px;
+    border: 1px solid var(--cultured);
+}
+
+.input-controls:focus {
+    border-color: var(--eerie-black);
+}
+
+
+/*____  Margin Class  _____ */
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-4 {
+    margin-top: 30px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+.my-1 {
+    margin: 5px 0;
+}
+
+.my-2 {
+    margin: 10px 0;
+}
+
+.my-3 {
+    margin: 15px 0;
+}
+
+.my-4 {
+    margin: 20px 0;
+}
+
+.my-5 {
+    margin: 25px 0;
+}
+
+.mb-minus-30 {
+    margin-bottom: -30px;
+}
+
+/* _____  Text transfrom _____ */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+/*______  Flex Class  _______ */
+.flex-center,
+.flex-between,
+.flex-column,
+.flex-start,
+.flex-around {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-start {
+    align-items: center;
+    gap: 5px;
+}
+
+/* ______  gap  ______ */
+.gap-0 {
+    gap: 0;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+/*_______  Grid Class  _______ */
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5 {
+    display: grid;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/*_____  Buttons Class  _____ */
+.btn {
+    display: inline-block;
+    padding: 13px 18px;
+    transition: .3s;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-timing);
+    font-size: var(--xs-font);
+    font-weight: var(--weight-600);
+}
+
+.btn.btn-dark {
+    background: var(--eerie-black);
+    color: var(--white);
+}
+
+.btn.btn-dark:hover {
+    background: var(--salmon-pink);
+}
+
+
+
+
+/* ======+=  Responsive typography  =+======*/
+@media screen and (max-width: 991px) {
+    :root {
+        --biggest-font: 32px;
+        --h1-font: 24px;
+        --h2-font: 20px;
+        --h3-font: 16px;
+        --normal-font: 15px;
+        --small-font: 13px;
+        --smaller-font: 12px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ======+=  Responsive typography  =+======*/
+@media screen and (max-width: 769px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+/* ____________  ScrollBar ___________ */
+.has-scrollbar {
+    padding: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    width: 15px;
+    /* for vertical scroll */
+    height: 12px;
+    /* for horizontal scroll */
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: hsl(0, 5%, 81%);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 4%, 67%);
+}

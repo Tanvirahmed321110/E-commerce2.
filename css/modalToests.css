@@ -1,0 +1,181 @@
+@import './style.css';
+
+
+
+/* _____________||  Modal  ||_______________ */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    transition: .5s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* _______  Modal _______ */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    animation: popup 1s ease-in-out 2s forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}
+
+/* _____ Added active class in Modal _____ */
+.modal.closed {
+    display: none;
+}
+
+.modal-close-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/* _____ Modal Content _____ */
+.modal-content {
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+    margin: 20px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: 60px 30px;
+    text-align: center;
+    animation: scaleUp .5s ease-in-out 5s forwards;
+    z-index: 2;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.newsletter-img {
+    display: none;
+}
+
+
+
+.newsletter-desc {
+    color: var(--sonic-silver);
+    font-size: var(--md-font);
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* _____  Modal CLose Button  ____ */
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--salmon-pink);
+    color: var(--white);
+    font-size: var(--xl-font);
+    padding: 5px 11px;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--weight-600);
+}
+
+.modal-close-btn:hover {
+    opacity: 0.9;
+}
+
+
+
+
+/* _____________||  Toast  ||_______________ */
+.notification-toast {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 50px;
+    max-width: 340px;
+    width: 100%;
+    box-shadow: 0 5px 19px rgba(0, 0, 0, 0.208);
+    padding: 25px 20px;
+    transform: translateX(calc(-100% - 40px));
+    border-radius: var(--border-radius-md);
+    transition: .5s ease-in-out;
+    z-index: 4;
+    background-color: var(--white);
+    animation: slideInOut 6s ease-in-out infinite;
+}
+
+.notification-toast.closed {
+    display: none;
+}
+
+@keyframes slideInOut {
+
+    0%,
+    25%,
+    100% {
+        transform: translateX(calc(-100% - 40px));
+    }
+
+    35%,
+    85% {
+        transform: translateX(0);
+    }
+}
+
+.toast-image img {
+    width: 100px;
+    border: 1px solid var(--cultured);
+}
+
+.notification-toast .time {
+    color: var(--spanish-gray);
+    font-size: var(--xs-font);
+}
+
+.notification-toast .toast-close-btn {
+    position: absolute;
+    right: 14px;
+    top: 3px;
+    font-size: var(--xxl-font);
+    color: var(--spanish-gray);
+    font-weight: var(--weight-500);
+    user-select: none;
+}
