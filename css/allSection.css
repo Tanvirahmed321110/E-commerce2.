@@ -456,6 +456,14 @@
     overflow: auto hidden;
 }
 
+.deal .container,
+.new-products .container,
+.testimonial .container,
+.cta-banner .container,
+.blog .container {
+    padding: 0;
+}
+
 .deal .deal-item {
     border-radius: var(--border-radius-md);
     padding: 24px;
@@ -1188,7 +1196,7 @@
     }
 
     .deal-item-img {
-        width: 50%;
+        width: 100%;
         overflow: hidden;
         transition: .2s;
     }
@@ -1478,7 +1486,7 @@
 
     /* ______________|| New Products  ||____________ */
     .new-product-items.grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         row-gap: 30px;
     }
 
@@ -1488,13 +1496,13 @@
     }
 
 
-    /*Dela */
+    /*_____________  Deal  ____________ */
     .deal-item-img {
         width: 100%;
     }
 
 
-    /* service and cta */
+    /*___________ service and cta ____________*/
     .services-cta {
         display: flex;
         justify-content: space-between;
@@ -1557,7 +1565,7 @@
         position: relative;
         display: flex;
         align-items: flex-start;
-        gap: 15px;
+        gap: 25px;
         margin-bottom: 30px;
 
     }
@@ -1571,7 +1579,7 @@
         position: sticky;
         left: 0px;
         top: 20px;
-        min-width: 280px;
+        min-width: 250px;
         height: 100vh;
         z-index: 6;
         background-color: var(--white);
@@ -1630,5 +1638,14 @@
 
     .sidebar-bottom-items .rating.flex-center i {
         color: var(--sandy-brown)
+    }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+    .sidebar {
+        min-width: 280px;
     }
 }
